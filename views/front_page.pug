@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1=title
+  // Container for two columns
+  .columns-container
+    .column
+      h2 Users
+      ul
+        each user in users
+          li 
+            a(href=user.url) #{user.name}
+    .column
+      h2 Chores
+      ul
+        each chore in chores 
+          li 
+            a(href=chore.url) #{chore.name}
+  

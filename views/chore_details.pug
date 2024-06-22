@@ -1,0 +1,7 @@
+extends layout 
+
+block content
+  h1 #{chore.name}'s details
+  ul
+    each reminder in chore.reminders
+      li=reminder 

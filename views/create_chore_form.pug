@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1=title
+
+  form(id="choreForm" method="POST")
+    label(for="name") New Chore:
+    input(type="text" name="name" id="choreName" required)
+    
+    // Container for dynamic reminders input fields
+    #remindersContainer
+      div.reminder-input
+        label(for="reminders") Reminders:
+        input(type="text" name="reminders" class="reminder" required)
+    
+    button(type="button", id="addReminderBtn") Add Reminder
+
+    button(type="submit") Create
+  script(src="/javascripts/create_chore_form.js") 

@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+.columns-container {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+}
